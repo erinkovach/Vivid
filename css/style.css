@@ -114,7 +114,7 @@ h2 {
 	border-bottom: 1px solid #000;
 	padding: 5px 0px;
 	font-family: Arial, Helvetica, sans-serif;
-	font-size: 16px;
+	font-size: 18px;
 	margin-bottom: 10px;
 }
 
@@ -125,7 +125,18 @@ h2 {
 	max-width: 1100px;
 	margin: 0 auto;
 	margin-top: 50px;
-	background-color: rgba(255, 255, 255, 0.8); 
+	background-color: rgba(255, 255, 255, 0.7); 
+	box-shadow: inset 0px 25px 30px -35px black, 0px 0px 30px 0px black;
+}
+
+.contentBlockWhite {
+	display: flex;
+	flex-flow: row wrap;
+	width: 100%;
+	max-width: 1100px;
+	margin: 0 auto;
+	margin-top: 50px;
+	background-color: rgb(255, 255, 255); 
 	box-shadow: inset 0px 25px 30px -35px black, 0px 0px 30px 0px black;
 }
 
@@ -140,13 +151,11 @@ p, .p {
 	line-height: 20px;
 }
 
-
 .contentImage {
 	flex: 1;
 	width: 100%;
 	height: 100%;
 }
-
 
 /*mobile navigation*/
 .mobileNav {
@@ -209,12 +218,8 @@ p, .p {
 /*hamburger menu ends*/
 
 table {
-	width: 100%;
-}
-
-.tableContant {
 	background-color: #FFF;
-	opacity: 0.9;
+	opacity: 0.7;
 	max-width: 1100px;
 	width: 100%;
 }
