@@ -390,7 +390,7 @@ p, .p, .ref {
 
 /*FAQ table styles*/
 table {
-	max-width: 1100px;
+	/*max-width: 1100px;*/
 	width: 100%;
 }
 
@@ -507,7 +507,9 @@ nav {
 	height: auto;
 }
 
-.col-ham {
+.col-ham, 
+.footerCol1, 
+.footerCol2 {
 	display: block;
 }
 
@@ -518,13 +520,11 @@ nav {
 	margin-bottom: 20px;
 }
 
-.inputBoxWidthName {
-	width: 100%;
-}
-
+.inputBoxWidthName,
 .inputBoxWidth {
 	width: 100%;
 }
+
 
 
 

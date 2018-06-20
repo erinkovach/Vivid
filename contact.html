@@ -74,53 +74,48 @@
 						<div class="formFlex">
 
 							<!--first name section -->
-							<span style="formLabelPaddingTop">
-
+							<span>
 								<!-- label -->
-								<label class="p" for="">First Name</label>
-								<br/>
+								<label class="p" for="">First Name</label><br/>
+								
 								<!-- input -->
-								<input class="p inputBoxWidthName" type="text" id="firstNameID" name="first name">
+								<input class="p inputBoxWidthName" type="text" id="firstNameID" name="firstName">
 							</span>
 
 							<!--last name section -->
 							<span class="leftPaddingForm">
-								
 								<!-- label -->
-								<label class="p" for="">Last Name</label>
-								<br/>
+								<label class="p" for="">Last Name</label><br/>
 								<!-- input -->
-								<input class="p inputBoxWidthName" type="text" id="lastNameID" name="last name">
-
+								<input class="p inputBoxWidthName" type="text" id="lastNameID" name="lastName">
 							</span> <!--last name section -->
+
 						</div><br/>	
 						
 
 
 
-							<!-- contact -->
+						<!-- contact -->
 						<div>
 							<!-- email input section -->
-							<span>
+							<!-- label -->
+							<label class="p" for="">e-mail address</label><br/>
 
-								<!-- label -->
-								<label class="p" for="">e-mail address</label>
-								<br/>
-								<!-- input -->
-								<input class="p inputBoxWidth" id="emailID" type="email" name="email address">
-							</span><br/><br/>
+							<!-- input -->
+							<input class="p inputBoxWidth" id="emailID" type="email" name="emailAddress"><br/><br/>
 
 							<!-- phone input section -->
-							<span>
+							<!-- label -->
+							<label class="p" for="">Phone Number</label><br/>
 								
-								<!-- label -->
-								<label class="p" for="">Phone Number</label>
-								<br/>
-								<!-- input -->
-								<input class="p inputBoxWidth" id="phoneID" type="Number" name="phone number">
+							<!-- input -->
+							<input class="p inputBoxWidth" id="phoneID" type="Number" name="phoneNumber">
 
-							</span>
-						</div><br/>	<!-- end contact -->
+						</div><br/><br/>	<!-- end contact -->
+
+						<div>
+							<textarea class="p inputBoxWidth" name="message" id="messageID" rows="5"  placeholder="Please let us know what you are interested in. "></textarea>
+						</div>
 
 
 
@@ -136,13 +131,14 @@
 									<legend class="p">Please select your preferred method of communication.</legend>	
 									
 									<!-- input -->
-									<input type="radio" name="please contact me by" value="email" checked>
+									<input type="radio" name="preferredMethod" value="email" checked>
 
 									<!-- label -->
 									<label class="p" for="email">E-mail</label><br/>
 
 									<!-- input -->
-									<input type="radio" name="please contact me by" value="phone">
+									<input type="radio" name="preferredMethod" value="phone">
+
 									<!-- label -->
 									<label class="p" for="phone">Phone</label>
 
@@ -157,8 +153,6 @@
 
 						<!-- submit button -->
 						<div>
-
-							<!-- button -->
 							<button type="submit" value="Submit">Submit Info</button>
 						</div> <!-- end submit button -->
 
