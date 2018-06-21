@@ -516,6 +516,10 @@ footer .row {
 	padding: 10px 20px;
 }
 
+.hide {
+	display: none;
+}
+
 @media screen and (max-width: 500px) {
 nav {
 	display: none;
