@@ -556,6 +556,12 @@ p, .p, .ref {
           transform: translate(0%, calc(0% + 113px) );
 }
 
+.mobileNav ul {
+	list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
 .mobileNav li {
 	background-color: #FFF;
 	border-bottom: solid 1px #eeeeee;
@@ -567,7 +573,6 @@ p, .p, .ref {
 
 .mobileNav li:hover {
 	background-color: #ADFC1A;
-	display: block;
 }
 
 .mobileNav a {
@@ -698,13 +703,22 @@ footer p a:hover {
 
 
 
-/*mobile*/
+/*MOBILE*/
+
+
 @media screen and (max-width: 1100px) {
 .cellImage {
 	display: block;
 	margin: 0 auto;
 	float: right
 }
+
+
+ .contentBlock,
+ .contentBlockWhite {
+ 	display: block;
+    width: 90%;
+ }
 
 .image-box{
   width:250px;
@@ -721,13 +735,9 @@ footer p a:hover {
 	margin: 0 auto;
 }
 
-.text_half {
-	display: block;
-	width: 100%;
-}
 
 .text_half {
-	display: block;
+	display: inline-block;
 	width: 100%;
 }
 
@@ -750,15 +760,25 @@ nav {
 	display: none;
  }
 
- .contentBlock,
+/* .contentBlock,
  .contentBlockWhite {
  	display: block;
     width: 90%;
- }
+ }*/
 
 .mobileNav {
 	display:block;
+	width: 100%;
 }
+  
+.text_half,
+.inputBoxWidthName,
+.inputBoxWidth,
+.row_content {
+	display: block;
+	width: 100%;
+}
+
 
 .hamburger {
   display: inline-block;
@@ -781,11 +801,6 @@ nav {
 	margin: 0 auto;
 	width: 100%;
 	margin-bottom: 20px;
-}
-
-.inputBoxWidthName,
-.inputBoxWidth {
-	width: 100%;
 }
 
 
