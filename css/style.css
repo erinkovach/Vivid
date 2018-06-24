@@ -567,6 +567,7 @@ p, .p, .ref {
 
 .mobileNav li:hover {
 	background-color: #ADFC1A;
+	display: block;
 }
 
 .mobileNav a {
