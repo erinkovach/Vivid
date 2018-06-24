@@ -569,9 +569,10 @@ p, .p, .ref {
 	background-color: #ADFC1A;
 }
 
-.mobileNav a{
+.mobileNav a {
 	color: #333;
 	text-decoration: none;
+	display: block;
 }
 /*mobile navigation ends*/
 
