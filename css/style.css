@@ -47,7 +47,7 @@ header {
   padding-top: 25px;
 }
 
-.col{
+.col {
   flex:1;
 }
 
@@ -62,7 +62,7 @@ header {
 
 .bullets {
   list-style-type: disc; 
-  padding-left: 35px;
+  padding-left: 15px;
 }
 
 .row.row_nav {
@@ -71,11 +71,20 @@ header {
   padding-top: 60px;
 } 
 
-.row.row_nav li a{
+.row.row_nav li a {
   padding:0;
   text-decoration: none;
   color: #FFF;
 }
+
+.row.row_nav li a:hover {
+	color: #ADFC1A;
+}
+.row.row_nav li a:active {
+	color: #ADFC1A;
+}
+
+
 
 nav {
 	display: flex;
@@ -103,6 +112,12 @@ body {
 
   .refBackground { 
 	background: url(../images/RefBackground.png) no-repeat center center fixed;
+	background-size: 100%;
+    background-size: cover;
+ }
+
+  .imagingBackground { 
+	background: url(../images/background_lab.png) no-repeat center center fixed;
 	background-size: 100%;
     background-size: cover;
  }
@@ -203,17 +218,6 @@ h3 {
 	box-shadow: inset 0px 25px 30px -35px black, 0px 0px 30px 0px black;
 }
 
-/*.contentBlockContact {
-	display: flex;
-	flex-flow: row wrap;
-	width: 55%;
-	max-width: 570px;
-	margin: 0 auto;
-	margin-top: 50px;
-	background-color: rgba(255, 255, 255, 0.75); 
-	box-shadow: inset 0px 25px 30px -35px black, 0px 0px 30px 0px black;
-	margin-right: 580px;
-}*/
 
 /*waiting to see if I can remove totally ".copy"*/ 
 
@@ -228,9 +232,10 @@ h3 {
 	width: 100%;
 }
 
+/* NOT IN USE */
 
-/*Spacing items 1/3 in Content Block*/
 
+/* Spacing items 1/3 in Content Block */
 .parentThirds {
 	display: flex;
 	flex-flow: row wrap;
@@ -251,24 +256,28 @@ h3 {
   margin: 0 auto;
   float: right;
 }
-/*END Spacing items 1/3 in Content Block*/
+/* end Spacing items 1/3 in Content Block */
 
 
-/*trial*/
+/*Cell Zoom*/
+
 .image-box{
-  width:300px;
-  height: 300px;
+  width:250px;
+  min-width: 250px;
+  height: 250px;
+  min-height: 250px;
   border: 2px solid #000;
-  margin: 5px;
   overflow: hidden;
   position: relative;
+  flex: 1;
 }
+
 .cell1 {
 	width:100%;
     height:100%;
-	background: url(../images/cell1_3.png);
+	background: url(../images/cell1_250px.png);
 	position: absolute;
-	top: 0px;
+	top: 00px;
     left: 0px;
 	transition: all 1s ease;
   -moz-transition: all 1s ease;
@@ -279,18 +288,101 @@ h3 {
 .cell2 {
 	width:100%;
     height:100%;
-	background: url(../images/cell2_3.png);
+	background: url(../images/cell2_250px.png);
 	position: absolute;
 	top: 00px;
     left: 0px;
-	transition: all 3s ease;
-  -moz-transition: all 3s ease;
-  -ms-transition: all 3s ease;
-  -webkit-transition: all 3s ease;
-  -o-transition: all 3s ease;
+	transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -webkit-transition: all 1s ease;
+  -o-transition: all 1s ease;
 } 
+.cell3 {
+	width:100%;
+    height:100%;
+	background: url(../images/cell3_250px.png);
+	position: absolute;
+	top: 00px;
+    left: 0px;
+	transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -webkit-transition: all 1s ease;
+  -o-transition: all 1s ease;
+}
+.cell4 {
+	width:100%;
+    height:100%;
+	background: url(../images/cell4_250px.png);
+	position: absolute;
+	top: 00px;
+    left: 0px;
+	transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -webkit-transition: all 1s ease;
+  -o-transition: all 1s ease;
+}
 
-.cell1:hover, .cell2:hover {
+.cellA {
+	width:100%;
+    height:100%;
+	background: url(../images/cellA_250px.png);
+	position: absolute;
+	top: 00px;
+    left: 0px;
+	transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -webkit-transition: all 1s ease;
+  -o-transition: all 1s ease;
+}
+
+.cellB {
+	width:100%;
+    height:100%;
+	background: url(../images/cellB_250px.png);
+	position: absolute;
+	top: 00px;
+    left: 0px;
+	transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -webkit-transition: all 1s ease;
+  -o-transition: all 1s ease;
+}
+
+.cellC {
+	width:100%;
+    height:100%;
+	background: url(../images/cellC_250px.png);
+	position: absolute;
+	top: 00px;
+    left: 0px;
+	transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -webkit-transition: all 1s ease;
+  -o-transition: all 1s ease;
+}
+
+.cellD {
+	width:100%;
+    height:100%;
+	background: url(../images/cellD_250px.png);
+	position: absolute;
+	top: 00px;
+    left: 0px;
+	transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -webkit-transition: all 1s ease;
+  -o-transition: all 1s ease;
+}
+
+.cell1:hover, .cell2:hover, .cell3:hover, .cell4:hover,
+.cellA:hover, .cellB:hover, .cellC:hover, .cellD:hover {
   width:300px;
   height: 300px;
   transform: scale(1.5);
@@ -300,66 +392,6 @@ h3 {
   -ms-transform: scale(1.5); /* IE 9 */
   transition: 8s all ease;
 }  
-/*end*/
-
-
-
-
-
-/*Imaging Zoom*/
-.image-box {
-  width:300px;
-  height:300px;
-  overflow: hidden;
-  padding: 20px;
-}
-.cellImage1 {
-	width:300px;
-    height:200px;
-	background: url(../images/cell1.png);
-	background-position:center;
-	transition: all 10s ease;
-  -moz-transition: all 10s ease;
-  -ms-transition: all 10s ease;
-  -webkit-transition: all 10s ease;
-  -o-transition: all 10s ease;
-} 
-
-.cellImage2 {
-	width:300px;
-    height:200px;
-	background: url(../images/cell2.png);
-	background-position:center;
-	transition: all 10s ease;
-  -moz-transition: all 10s ease;
-  -ms-transition: all 10s ease;
-  -webkit-transition: all 10s ease;
-  -o-transition: all 10s ease;
-} 
-
-.cellImage3 {
-	width:300px;
-    height:200px;
-	background: url(../images/cell3.png);
-	background-position:center;
-	transition: all 10s ease;
-  -moz-transition: all 10s ease;
-  -ms-transition: all 10s ease;
-  -webkit-transition: all 10s ease;
-  -o-transition: all 10s ease;
-}
-
-.cellImage4 {
-	width:300px;
-    height:200px;
-	background: url(../images/cell4.png);
-	background-position:center;
-	transition: all 10s ease;
-  -moz-transition: all 10s ease;
-  -ms-transition: all 10s ease;
-  -webkit-transition: all 10s ease;
-  -o-transition: all 10s ease;
-}
 
 .cellImage:hover {
   transform: scale(1.5);
@@ -392,6 +424,11 @@ h3 {
 
 
 /* form styles */
+.flexParent {
+	display: flex;
+	flex-flow: row wrap;
+}
+
 .formFlex {
 	display: flex;
 }
@@ -427,8 +464,9 @@ button:hover {
 
 /* Form page column 2 styles*/
 .contactDiv p{
-	font-size: 18px;
-	line-height: 25px;
+	font-size: 16px;
+	line-height: 20px;
+	text-align: center;
 }
 
 .contactDiv a{
@@ -436,7 +474,7 @@ button:hover {
 }
 
 .contactDiv a:hover {
-	color: #ADFC1A;
+	color: #FF1D25;
 }
 /* end Form page column 2* /
 
@@ -446,6 +484,10 @@ button:hover {
 p, .p, .ref {
 	font-size: 14px;
 	line-height: 20px;
+}
+
+.i {
+	font-style: italic;
 }
 
 .smallcopy {
@@ -474,6 +516,13 @@ p, .p, .ref {
 	vertical-align: baseline;
 	line-height: 0;
 	position: relative;
+}
+.imageLabelCopy, .bulletsItalics {
+    /*flex:1;*/
+	font-size: 12px;
+	font-style: italic;
+	padding-left: 5px;
+	line-height: 18px;
 }
 /* end copy throughout styles & size */
 
@@ -637,11 +686,39 @@ footer p a:hover {
 /*end footer*/
 
 
+.linkRed a:hover {
+ color: #FF1D25;
+}
+
+.linkGreen a:hover {
+ color: #adfc1a;
+}
+
+
 
 /*mobile*/
+@media screen and (max-width: 1100px) {
+.cellImage {
+	display: block;
+	margin: 0 auto;
+	float: right
+}
 
+.image-box{
+  width:250px;
+  min-width: 250px;
+  height: 250px;
+  min-height: 250px;
+  border: 2px solid #000;
+  overflow: hidden;
+  margin: 0 auto;
+}
 
-@media screen and (max-width: 700px) {
+.imageLabelCopy {
+	text-align: center;
+	margin: 0 auto;
+}
+
 .text_half {
 	display: block;
 	width: 100%;
@@ -664,8 +741,9 @@ footer .row {
 .hide {
 	display: none;
 }
+}
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
 nav {
 	display: none;
  }
@@ -681,7 +759,8 @@ nav {
 }
 
 .hamburger {
-  display: inline-block;}
+  display: inline-block;
+}
 
 .half, .contentImage, .pic_half, .text-half {
 	width: 100%;
@@ -702,30 +781,10 @@ nav {
 	margin-bottom: 20px;
 }
 
-.cellImage {
-	display: block;
-	margin: 0 auto;
-	width: 100%;
-	margin-bottom: 20px;
-	float: right
-}
-
 .inputBoxWidthName,
 .inputBoxWidth {
 	width: 100%;
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
