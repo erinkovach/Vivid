@@ -65,23 +65,36 @@ header {
   padding-left: 15px;
 }
 
-.row .row_nav {
+.row.row_nav {
   justify-content: flex-end;
   list-style: none;
   padding-top: 60px;
 } 
 
-.row .row_nav li a {
+.row.row_nav li a {
   padding:0;
   text-decoration: none;
-  color: #FFF;
+  color: yellow;
 }
 
-.row .row_nav li a:hover {
+.row.row_nav li a:visited {
   padding:0;
   text-decoration: none;
-  color: #adfc1a;
+  color: blue;
 }
+
+.row.row_nav li a:hover {
+  padding:0;
+  text-decoration: none;
+  color: green;
+}
+
+.row.row_nav li a:active {
+  padding:0;
+  /*text-decoration: none;*/
+  color: pink;
+}
+
 
 
 nav {
@@ -140,6 +153,14 @@ body {
   padding-bottom: 15px;
   display: block!important;
 }
+
+/*.nav a{
+  padding: 10px;
+  text-align: center;
+  font-size: 16px;
+  color: #FFF;
+  font-family: Arial, sans-serif;
+}*/
 
 
 #logo{
@@ -555,10 +576,6 @@ p, .p, .ref {
 }
 
 .mobileNav li:hover {
-	background-color: #ADFC1A;
-}
-
-.mobileNav li:active {
 	background-color: #ADFC1A;
 }
 
