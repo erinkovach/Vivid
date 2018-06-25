@@ -74,25 +74,13 @@ header {
 .row.row_nav li a {
   padding:0;
   text-decoration: none;
-  color: yellow;
-}
-
-.row.row_nav li a:visited {
-  padding:0;
-  text-decoration: none;
-  color: blue;
+  color: #FFF;
 }
 
 .row.row_nav li a:hover {
   padding:0;
   text-decoration: none;
-  color: green;
-}
-
-.row.row_nav li a:active {
-  padding:0;
-  /*text-decoration: none;*/
-  color: pink;
+  color: #adfc1a;
 }
 
 
