@@ -558,6 +558,10 @@ p, .p, .ref {
 	background-color: #ADFC1A;
 }
 
+.mobileNav li:active {
+	background-color: #ADFC1A;
+}
+
 .mobileNav a {
 	color: #333;
 	text-decoration: none;
