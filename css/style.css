@@ -65,25 +65,23 @@ header {
   padding-left: 15px;
 }
 
-.row.row_nav {
+.row .row_nav {
   justify-content: flex-end;
   list-style: none;
   padding-top: 60px;
 } 
 
-.row.row_nav li a {
+.row .row_nav li a {
   padding:0;
   text-decoration: none;
   color: #FFF;
 }
 
-.row.row_nav li a:hover {
-	color: #ADFC1A;
+.row .row_nav li a:hover {
+  padding:0;
+  text-decoration: none;
+  color: #adfc1a;
 }
-.row.row_nav li a:active {
-	color: #ADFC1A;
-}
-
 
 
 nav {
@@ -143,21 +141,6 @@ body {
   display: block!important;
 }
 
-.nav a{
-  padding: 10px;
-  text-align: center;
-  font-size: 16px;
-  color: #FFF;
-  font-family: Arial, sans-serif;
-}
-
-.col ul li {
-	color: #ADFC1A;;
-}
-
-.col ul li a {
-	padding: 20px;
-}
 
 #logo{
   width: 250px;
