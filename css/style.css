@@ -1,6 +1,6 @@
 html body * {
   box-sizing: border-box;
-  font-family: 'Roboto', Arial, sans-serif;
+  font-family: 'Lato', Arial, sans-serif;
   /*border: 1px dashed #333;*/
 }
 
@@ -27,6 +27,7 @@ header {
   margin: 0 auto;
   background-color: #000;
 }
+
 
 .row_content {
   display: flex;
@@ -65,30 +66,124 @@ header {
   padding-left: 15px;
 }
 
-.row .row_nav {
-  justify-content: flex-end;
-  list-style: none;
-  padding-top: 60px;
-} 
-
-.row .row_nav li a {
-  padding:0;
-  text-decoration: none;
-  color: #FFF;
-}
-
-.row .row_nav li a:hover {
-  padding:0;
-  text-decoration: none;
-  color: #adfc1a;
-}
-
-
-
+/* NAVIGATION */
+/* web navigation */
 nav {
 	display: flex;
  	width: 100%;
 	margin: 0 auto;
+}
+
+.row .row_nav {
+  justify-content: flex-end;
+  list-style: none;
+} 
+
+.row .row_nav li {
+  text-align: center;
+  vertical-align: center;
+  font-size: 14px;
+}
+
+.row .row_nav li a {
+  text-decoration: none;
+  color: #FFF;
+  display:block; 
+  height:100%;
+  padding: 50px 15px 0 15px;
+}
+
+.row .row_nav li a {
+  background-color: #000;
+}
+
+.row .row_nav li a:hover {
+  background-color: #212121;
+}
+/* end web navigation */
+
+/* mobile navigation */
+.mobileNav {
+  box-shadow: inset 0px 25px 30px -35px black, 0px 0px 30px 0px black;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  z-index: -1;
+  -webkit-transform: translate(0%, -100%);
+          transform: translate(0%, -100%);
+  transition: -webkit-transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+}
+
+.mobileNav.active {
+  -webkit-transform: translate(0%, calc(0% + 113px) );
+          transform: translate(0%, calc(0% + 113px) );
+}
+
+.mobileNav ul {
+	list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.mobileNav li {
+	background-color: #FFF;
+	border-bottom: solid 1px #eeeeee;
+	text-align: center;
+	width: 100%;
+}
+
+.mobileNav li:hover {
+	background-color: #ADFC1A;
+}
+
+.mobileNav a {
+	color: #333;
+	text-decoration: none;
+	display: block;
+	padding:15px;
+}
+/* end mobile navigation */
+
+/* hamburger menu */
+.hamburger {
+  display: none;
+}
+
+.line {
+  display: block;
+  width: 35px;
+  height: 4px;
+  background: #FFF;
+  margin-bottom: 7px;
+  border-radius: 5px;
+  pointer-events: none;
+}
+/* end hamburger menu */
+/* END NAVIGATION */
+
+
+.refButton {
+	background-color: #000;
+	color:#FFF;
+	display: inline-block;
+	margin-top: 30px;
+}
+
+.refButton a {
+	padding:10px 20px;
+	background-color: #000;
+	color:#FFF;
+	display: inline-block;
+	text-decoration: none;
+}
+.refButton a:hover {
+	color: #adfc1a;
+	background-color: #212121;
 }
 
 body { 
@@ -130,26 +225,6 @@ body {
   min-height: calc(100% - 85px);
 }
 
-.row_nav li {
-  text-align: center;
-  font-size: 14px;
-  color: #FFF;
-  padding: 15px;
-}
-.row_nav li a{
-  padding-bottom: 15px;
-  display: block!important;
-}
-
-.nav a{
-  padding: 10px;
-  text-align: center;
-  font-size: 16px;
-  color: #FFF;
-  font-family: Arial, sans-serif;
-}
-
-
 #logo{
   width: 250px;
   height: 71px;
@@ -171,7 +246,7 @@ h1 {
 h2 {
 	color: #000;
 	border-bottom: 1px solid #000;
-	padding: 10px 10px 10px 0px;
+	padding: 30px 10px 10px 0px;
 	/*font-family: 'Roboto', Arial, sans-serif;*/
 	font-size: 20px;
 	margin-bottom: 10px;
@@ -198,6 +273,16 @@ h3 {
 	box-shadow: inset 0px 25px 30px -35px black, 0px 0px 30px 0px black;
 }
 
+.tablePricing {
+	margin-top:50px;
+	margin: 0 auto;
+	display: flex;
+	flex-flow: row wrap;
+	width: 100%;
+/*	background-color: rgba(255, 255, 255, 0.75); 
+*//*box-shadow: inset 0px 25px 30px -35px black, 0px 0px 30px 0px black;
+*/}
+
 .contentBlockWhite {
 	display: flex;
 	flex-flow: row wrap;
@@ -209,13 +294,6 @@ h3 {
 	box-shadow: inset 0px 25px 30px -35px black, 0px 0px 30px 0px black;
 }
 
-
-/*waiting to see if I can remove totally ".copy"*/ 
-
-/*.copy {
-	flex: 2;
-	padding: 30px;
-}*/
 
 
 .whole {
@@ -391,7 +469,7 @@ h3 {
   -o-transform: scale(1.5);
   -ms-transform: scale(1.5); /* IE 9 */
   -ms-filter: 
-  transition: 1s all ease;
+  transition: 1s all ;
 }
 /*end imaging zoom */
 
@@ -477,6 +555,7 @@ p, .p, .ref {
 	line-height: 20px;
 }
 
+
 .i {
 	font-style: italic;
 }
@@ -525,70 +604,6 @@ p, .p, .ref {
 	margin: 0 20px 10px 0;
 }
 
-/*mobile navigation*/
-.mobileNav {
-  box-shadow: inset 0px 25px 30px -35px black, 0px 0px 30px 0px black;
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  text-align: center;
-  z-index: -1;
-  -webkit-transform: translate(0%, -100%);
-          transform: translate(0%, -100%);
-  transition: -webkit-transform 0.5s ease-in-out;
-  transition: transform 0.5s ease-in-out;
-  transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
-}
-
-.mobileNav.active {
-  -webkit-transform: translate(0%, calc(0% + 113px) );
-          transform: translate(0%, calc(0% + 113px) );
-}
-
-.mobileNav ul {
-	list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-.mobileNav li {
-	background-color: #FFF;
-	border-bottom: solid 1px #eeeeee;
-	font-family: Arial, sans-serif;
-	padding:15px;
-	text-align: center;
-	width: 100%;
-}
-
-.mobileNav li:hover {
-	background-color: #ADFC1A;
-}
-
-.mobileNav a {
-	color: #333;
-	text-decoration: none;
-	display: block;
-}
-/*mobile navigation ends*/
-
-/*hamburger menu*/
-.hamburger {
-  display: none;
-}
-
-.line {
-  display: block;
-  width: 35px;
-  height: 4px;
-  background: #FFF;
-  margin-bottom: 7px;
-  border-radius: 5px;
-  pointer-events: none;
-}
-/*hamburger menu ends*/
-
 
 /*FAQ table styles*/
 table {
@@ -613,27 +628,43 @@ table {
 .tableRow2 td,
 .tableRowWhite td,
 .tableRowGrey td {
-	text-align: center;
-	padding: 10px;
+	padding: 10px 30px;
 }
 
 table tr td.first {
-	width: 50%;
+	width: 40%;
 	text-align: left;
 	padding-left:30px;
 	vertical-align: center;
 }
 
-table tr td.ref {
+table tr td.ref, {
 	text-align: left;
 	padding:10px 30px;
 }
 
 table tr td.other {
-	width: 16.6%;
+	width: 20%;
+	text-align: center;
 }
+
+.tableSingleRow {
+	text-align: left;
+	padding:10px 30px;
+}
+
+
+
+
 /*FAQ table styles*/
 
+/*pricing table styles*/
+table tr td.fourths {
+	width: 25%;
+	text-align: center;
+	vertical-align: center;
+}
+/*end pricing table styles*/
 
 /* form validation styles */
 input:invalid {
