@@ -19,13 +19,13 @@ header {
 	z-index: 3;
 }
 
-/*This Row is for the top nav*/
 .row {
   display: flex;
   flex-flow: row wrap;
   width: 100%;
   max-width: 1100px;
   margin: 0 auto;
+  background-color: #000;
 }
 
 
@@ -33,10 +33,18 @@ header {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
-  width: 90%;
-  max-width: 1000px;
+  width: 100%;
+  max-width: 1100px;
   margin: 0 auto;
   height: auto;
+}
+
+.row_content_bottom {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1100px;
   padding-top: 25px;
 }
 
@@ -284,7 +292,6 @@ hr {
 	width: 50px;
 	align-items: left;
 	display: inline-block;
-	margin: 30px 0;
 }
 
 /* white block - opacity at 75% */
@@ -522,7 +529,7 @@ hr {
 }
 
 .thumbnail:hover .image {
-  opacity: 0.85;
+  opacity: 0.7;
 }
 
 .thumbnail:hover .middle {
@@ -549,12 +556,11 @@ hr {
 }
 /*END Spacing items 50% in Content Block*/
 
-
 .chart {
+	width: 100%;
+	max-width: 850px;
+	height: auto;
 	border:1px solid #000;
-	display: block;
-	margin: 0 auto;
-	width: 750px;
 }
 
 

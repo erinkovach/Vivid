@@ -6,12 +6,13 @@
 	<title>Vivid Microscopy</title>
 
 	<!-- external CSS links -->
-	<link rel="stylesheet" href="css/reset.css">
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/lightbox.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-
 </head>
 <body>
+
 
 	<!-- header, logo, navigation -->
 	<header>
@@ -25,11 +26,13 @@
 			<!-- web navigation -->
 			<nav class="col">
 		        <ul class="row row_nav">
-				    <li><a href="index.html">Home</a></li>
-			        <li><a href="quantitative.html">Quantitative Products</a></li>
-			    	<li><a href="semkur.html">Imaging</a></li>
+			        <li><a href="index.html">Home</a></li>
+			        <li><a href="quantative.html">Quantitative</a></li>
+			    	<li><a href="imagingNew.html">Imaging</a></li>
+				    <li><a href="cellSorting.html">Cell Sorting</a></li>
 			        <li><a href="FAQ.html">FAQ</a></li>
 			        <li><a href="creators.html">Meet Us</a></li>
+			        <li><a href="#">Order</a></li>
 			        <li><a href="contactNew.html">Contact</a></li>
 	            </ul>
 			</nav> <!-- end web navigation -->
@@ -48,33 +51,48 @@
 		<div class="mobileNav">
 	        <ul>
 		        <li><a href="index.html">Home</a></li>
-		        <li><a href="quantitative.html">Quantitative Products</a></li>
-		    	<li><a href="semkur.html">Imaging</a></li>
+		        <li><a href="quantative.html">Quantitative</a></li>
+		    	<li><a href="imagingNew.html">Imaging</a></li>
+			    <li><a href="cellSorting.html">Cell Sorting</a></li>
 		        <li><a href="FAQ.html">FAQ</a></li>
 		        <li><a href="creators.html">Meet Us</a></li>
+		        <li><a href="#">Order</a></li>
 		        <li><a href="contactNew.html">Contact</a></li>
-            </ul>
+	        </ul>
 		</div> <!-- end mobile navigation -->
 	</header> <!-- end header, logo, navigation -->
 
+
+
 	
-	<!-- wrapper -->
+	<!-- BEGIN WRAPPER - contains all body content -->
 	<div id="wrapper">
 
-	<!-- SEMKUR content -->
-		<!-- SEMKUR -->
+		<!-- BEGIN SEMKUR CELL SORTING -->
+
 		<div class="contentBlock">
-			<h1>Oxidative Stress</h1>
+			<h1>SEMKUR cell sorting</h1>
 			<div class="whole">
-				<p>This product is used for: The probe is able to measure glutathione in a physiologically relevant range. It can monitor changes in fluorescence emission from both Coumarin and Fluorescein, upon reduction of the disulfide bond that joins this donor-acceptor FRET pair. The ratio of the fluorescence emission band intensity, changes upon reduction with glutathione, and because of the probe’s low reduction potential, permits quantitative measurement of glutathione levels in the 1–10 mM range.</p>
+				<p>SEMKUR cell sorting can allow an individual to differentiate cells based on thiol labeling. In this case, our partner shows a shift to a more reduced state as a result of treating Alzheimer’s neuronal cells with a potential new drug.</p>
+
+				<!-- Charts -->
+				<div class="row_content"> 
+					<img class="pic_half" src="./images/CellSorting_Chart1.jpg" alt="Cell Sorting Chart 1">	
+					<img  class="pic_half" src="./images/CellSorting_Chart2.jpg" alt="Cell Sorting Chart 2">
+				</div>
+
+				<div class="row_content"> 
+					<img class="pic_half" src="./images/CellSorting_Chart3.jpg" alt="Cell Sorting Chart 3">	
+					<img class="pic_half" src="./images/CellSorting_Chart4.jpg" alt="Cell Sorting Chart 4">
+				</div> <!-- End Charts -->
 			</div>
-		</div> <!-- end SEMKUR --> 
+		</div> 
 
 
 		<!-- Pricing -->
 		<div class="contentBlock">
-			<h1>Pricing</h1>
-			<!-- Pricing content block -->
+			<h1>Product 3 Pricing</h1>
+			<!-- Pricing table -->
 			<div class="tablePricing">
 				<table>
 					<tr class="tableRowWhite">
@@ -92,11 +110,14 @@
 						<td class="fifths">Contact for quote</td>
 					</tr>
 				</table>
-			</div> <!-- end Pricing content block --> 
+			</div> <!-- end Pricing table --> 
 		</div> <!-- end Pricing --> 
 
+	</div> <!-- END WRAPPER -->
 
-	</div> <!-- end wrapper--> 
+
+
+
 
 
 	<!-- begin footer -->
@@ -120,5 +141,6 @@
 
 
 <script src="app.js"></script>
+<script src="lightbox-plus-jquery.min.js"></script>
 </body>
 </html>

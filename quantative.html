@@ -6,13 +6,14 @@
 	<title>Vivid Microscopy</title>
 
 	<!-- external CSS links -->
-	<link rel="stylesheet" href="css/reset.css">
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/lightbox.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-
 </head>
-<body class="refBackground">
-	
+<body>
+
+
 	<!-- header, logo, navigation -->
 	<header>
 		<!-- header row -->
@@ -22,7 +23,7 @@
 				<img id="logo" src="./images/Vivid_horizontal.png" alt="Vivid Microscopy">
 			</div>
 
-			<!-- web navigation -->
+			<!-- web navigation list -->
 			<nav class="col">
 		        <ul class="row row_nav">
 			        <li><a href="index.html">Home</a></li>
@@ -60,37 +61,44 @@
 	        </ul>
 		</div> <!-- end mobile navigation -->
 	</header> <!-- end header, logo, navigation -->
+
+
+
 	
-	<!-- body wrapper -->
+	<!-- BEGIN WRAPPER - contains all body content -->
 	<div id="wrapper">
-		<!-- References -->
+
+		<!-- "SEMKUR - Quantative" -->
 		<div class="contentBlock">
-			<h1>References</h1>
-			<table>
-				<tr class="tableRowWhite">
-					<td class="ref">Pullela PK, Chiku T, Carvan MJ 3rd, Sem DS. <a href="https://www.ncbi.nlm.nih.gov/pubmed/16527239">Fluorescence-based detection of thiols in vitro and in vivo using dithiol probes.</a> Anal Biochem. 2006 May 15;352(2):265-73. Epub 2006 Feb 20.</td>
-				</tr>
-				<tr class="tableRowGrey">
-					<td class="ref">Chiku T, Pullela PK, Sem DS. <a href="https://www.ncbi.nlm.nih.gov/pubmed/16943391">A dithio-coupled kinase and ATPase assay. J Biomol Screen.</a> 2006 Oct;11(7):844-53. Epub 2006 Aug 30.</td>
-				</tr>
-				<tr class="tableRowWhite">
-					<td class="ref">Sem DS and Pullela PK "DiThio Compounds" Patent number 7820833. 10/2010; Marquette University; Milwaukee, WI.</td>
-				</tr>
-				<tr class="tableRowGrey">
-					<td class="ref">Sem DS "Methods for Detecting DiThio-containing proteins using quenched fluorophores conjugated to peptides via linkers containing dithio groups" Patent number 8927291.  01/2015; Marquette University; Milwaukee, WI</td>
-				</tr>
-				<tr class="tableRowWhite">
-					<td class="ref">CT Dooley, TM Dore, GT Hanson, WC Jackson, SJ Remington and RY Tsien "Imaging dynamic redox changes in mammalian cells with green fluorescent probe indicators, J. Biol Chem. 279 (2004) 22284-22293</td>
-				</tr>
-				<tr class="tableRowGrey">
-					<td class="ref">Jonhera T "Fluorescence Probes for Cellular Thiols and Disulfide Detection: Synthesis and Biophysical Characterization" Marquette University, December 2011</td>
-				</tr>
-				<tr class="tableRowWhite">
-					<td><a class="ref" href="index.html">< Go Back</a></td>
-				</tr>
-			</table>
-		</div> <!-- end References -->
-	</div> <!-- end body wrapper--> 
+			<h1>SEMKUR - Quantative</h1>
+			<div class="whole">
+				<p>This probe operates as a traditional FRET probe (see the chart below).</p>
+				
+				<!-- FRET Info -->
+				<h2>Coumarin-SS-Fluorescein FRET Probes</h2>
+				<img class="chart" src="./images/QuantativeImage1_FRET.png" alt="FRET probe">
+				<br><hr><br>
+
+				<!-- Chart 1 Info -->
+				<p>The table below shows the reduction of SEMKUR-quantitative by 2mM Glutathione at an excitation at 325nm.</p>
+				<img class="chart" src="./images/Quantative_Chart1.png" alt="FRET probe">
+				<br><hr><br>
+
+				<!-- Chart 2 Info -->
+				<p>At 16mM glutathione, you can see a very different profile at an excitation of 325nm.  </p>
+				<img class="chart" src="./images/Quantative_Chart2.png" alt="FRET probe">
+				<br><hr><br>
+
+				<!-- A/B Chart Info -->
+				<p>When taking the A/B ratio versus glutathione, you arrive at a standard curve that can be used to ascertain the amount of Glutathione.  Glutathione can be used as a way to determine the level of cellular oxidative stress.</p>
+				<img class="chart" src="./images/Quantative_Chart3.png" alt="FRET probe">
+
+			</div> 
+		</div> <!-- END SEMKUR - Quantative --> 
+	</div> <!-- END Wrapper --> 
+
+
+
 
 
 	<!-- begin footer -->
@@ -114,5 +122,6 @@
 
 
 <script src="app.js"></script>
+<script src="lightbox-plus-jquery.min.js"></script>
 </body>
 </html>
