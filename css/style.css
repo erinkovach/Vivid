@@ -187,10 +187,9 @@ nav {
 
 /*Order Button*/
 .orderButton {
-	background-color: #121212;
-	color:#adfc1a;
-	display: inline-block;
-	margin-top: 30px;
+	display: block;
+	margin: 0 auto;
+	text-align: center;
 }
 
 .orderButton a {
@@ -198,6 +197,7 @@ nav {
 	background-color: #121212;
 	color:#adfc1a;
 	display: inline-block;
+	margin: 0 auto;
 	text-decoration: none;
 }
 .orderButton a:hover {
@@ -315,14 +315,12 @@ hr {
 }
 
 .tablePricing {
-	margin-top:50px;
 	margin: 0 auto;
 	display: flex;
 	flex-flow: row wrap;
-	width: 100%;
-/*	background-color: rgba(255, 255, 255, 0.75); 
-*//*box-shadow: inset 0px 25px 30px -35px black, 0px 0px 30px 0px black;
-*/}
+	width: 90%;
+	border: 1px solid #000;
+}
 
 .whole {
 	padding: 30px;
@@ -760,6 +758,12 @@ table tr td.sing {
 	vertical-align: center;
 }
 
+table tr td.half {
+	width: 50%;
+	text-align: center;
+	vertical-align: center;
+}
+
 table tr td.fourths {
 	width: 25%;
 	text-align: center;
@@ -847,6 +851,12 @@ footer p a:hover {
  .contentBlockWhite {
  	display: block;
     width: 90%;
+ }
+
+
+ .tablePricing {
+ 	display: block;
+    width: 100%;
  }
 
 .image-box {
