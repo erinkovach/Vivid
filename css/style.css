@@ -575,10 +575,14 @@ hr {
 /*END Spacing items 50% in Content Block*/
 
 .chart {
-	width: 100%;
-	max-width: 750px;
+	max-width: 800px;
 	height: auto;
 	border:1px solid #000;
+}
+
+.chartSorting {
+	max-width: 450px;
+	height: auto;
 }
 
 .centerImage {
@@ -885,12 +889,6 @@ nav {
 	display: none;
  }
 
-/* .contentBlock,
- .contentBlockWhite {
- 	display: block;
-    width: 90%;
- }*/
-
 .mobileNav {
 	display:block;
 	width: 100%;
@@ -899,8 +897,7 @@ nav {
 .text_half,
 .inputBoxWidthName,
 .inputBoxWidth,
-.row_content,
-.row_content_bottom {
+.row_content {
 	display: block;
 	width: 100%;
 }
@@ -926,13 +923,15 @@ nav {
 	display: block;
 }
 
-.headshot {
+.headshot,
+.chart,
+.chartSorting {
 	display: block;
 	margin: 0 auto;
 	width: 100%;
+	height: auto;
 	margin-bottom: 20px;
 }
-
 
 
 }}
