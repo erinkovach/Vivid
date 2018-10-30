@@ -1,7 +1,7 @@
 html body * {
   box-sizing: border-box;
   font-family: 'Roboto', Arial, sans-serif;
-  border: 1px dashed #333;
+  /*border: 1px dashed #333;*/
 }
 
 html, html body  {
@@ -551,6 +551,12 @@ hr {
 /*Spacing items 50% in Content Block*/
 .pic_half, {
 	flex: 1;
+	display: block;
+}
+
+.contentBlock img {
+	flex: 1;
+	display: block;
 }
 
 .text_half {
