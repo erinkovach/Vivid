@@ -499,7 +499,7 @@ hr {
   -o-transform: scale(1.5);
   -ms-transform: scale(1.5); /* IE 9 */
   -ms-filter: 
-  transition: 1s all ;
+  transition: 1s ;
 }
 
 
@@ -514,7 +514,8 @@ hr {
   width: 100%;
   height: auto;
   transition: .5s ease;
-  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
 }
 
 .middle {
@@ -523,7 +524,8 @@ hr {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   text-align: center;
 }
@@ -561,6 +563,8 @@ hr {
 	max-width: 750px;
 	height: auto;
 	border:1px solid #000;
+	display: block;
+    margin: 0 auto;
 }
 
 
