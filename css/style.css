@@ -8,7 +8,6 @@ html, html body  {
   height: 100%;
 }
 
-
 header {
 	display: flex;
 	align-items: flex-end;
@@ -28,21 +27,6 @@ header {
   background-color: #000;
 }
 
-
-.row_content {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
-  width: 90%;
-  max-width: 1000px;
-  margin: 0 auto;
-  height: auto;
-}
-
-.row_content img{
-	padding-top: 25px;
-}
-
 .col {
   flex:1;
 }
@@ -54,11 +38,6 @@ header {
   justify-content: flex-end;
   text-align: right;
   padding-right: 30px;
-}
-
-.bullets {
-  list-style-type: disc; 
-  margin-left: 50px;
 }
 
 /* NAVIGATION */
@@ -164,78 +143,8 @@ nav {
 /* END NAVIGATION */
 
 
-/*References Button*/
-.refButton {
-	background-color: #000;
-	color:#FFF;
-	display: inline-block;
-	margin-top: 30px;
-}
-
-.refButton a {
-	padding:10px 20px;
-	background-color: #000;
-	color:#FFF;
-	display: inline-block;
-	text-decoration: none;
-}
-.refButton a:hover {
-	color: #adfc1a;
-	background-color: #212121;
-}
-/*End References Button*/
-
-
-/*Order Button*/
-.orderButton {
-	display: block;
-	margin: 0 auto;
-	text-align: center;
-}
-
-.orderButton a {
-	padding:10px 20px;
-	background-color: #121212;
-	color:#adfc1a;
-	display: inline-block;
-	margin: 0 auto;
-	text-decoration: none;
-}
-.orderButton a:hover {
-	color: #121212;
-	background-color: #adfc1a;
-	border: 2px solid #121212;
-	padding:8px 18px;
-}
-/*End Order Button*/
-
-
 body { 
 	background: url(../images/bg1.jpg) no-repeat center center fixed;
-	background-size: 100%;
-    background-size: cover;
- }
-
- .contactBackground { 
-	background: url(../images/contactBackground2.png) no-repeat center center fixed;
-	background-size: 100%;
-    background-size: cover;
- }
-
- .FAQBackground { 
-	background: url(../images/FAQBackground.png) no-repeat center center fixed;
-	background-size: 100%;
-    background-size: cover;
- }
-
-  .refBackground { 
-	background: url(../images/RefBackground.png) no-repeat center center fixed;
-	background-size: 100%;
-    background-size: cover;
- }
-
-  .imagingBackground { 
-	background: url(../images/background_lab.png) no-repeat center center fixed;
 	background-size: 100%;
     background-size: cover;
  }
@@ -275,11 +184,9 @@ h2 {
 	text-align: left;
 }
 
-h3 {
-	color: #000;
-	padding: 5px 0px;
-	/*font-family: 'Roboto', Arial, sans-serif;*/
-	font-size: 16px;
+.bullets {
+  list-style-type: disc; 
+  margin-left: 50px;
 }
 
 /* small horizontal separator */
@@ -327,34 +234,67 @@ hr {
 	width: 100%;
 }
 
-
-/* Spacing items 1/3 in Content Block */
-.parentThirds {
-	display: flex;
-	flex-flow: row wrap;
-	width: 100%;
-}
-
-.twoThirds {
-	flex: 2;
-}
-
-.oneThird {
-	flex: 1;
-}
-
-.twoThirdsRow {
+/*Used in Cell Sorting Charts to put 2 in a row
+*/.row_content {
   display: flex;
   flex-flow: row wrap;
+  justify-content: space-between;
+  width: 90%;
+  max-width: 1000px;
   margin: 0 auto;
-  float: right;
+  height: auto;
+  padding-top: 25px;
 }
-/* end Spacing items 1/3 in Content Block */
 
 
-/*Cell Zoom*/
+/*References Button*/
+.refButton {
+	background-color: #000;
+	color:#FFF;
+	display: inline-block;
+	margin-top: 30px;
+}
 
-.image-box{
+.refButton a {
+	padding:10px 20px;
+	background-color: #000;
+	color:#FFF;
+	display: inline-block;
+	text-decoration: none;
+}
+.refButton a:hover {
+	color: #adfc1a;
+	background-color: #212121;
+}
+/*End References Button*/
+
+
+/*Order Button*/
+.orderButton {
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.orderButton a {
+	padding:10px 20px;
+	background-color: #121212;
+	color:#adfc1a;
+	display: inline-block;
+	margin: 0 auto;
+	text-decoration: none;
+}
+.orderButton a:hover {
+	color: #121212;
+	background-color: #adfc1a;
+	border: 2px solid #121212;
+	padding:8px 18px;
+}
+/*End Order Button*/
+
+
+/*CELL Images - CSS for hover*/
+.image-box {
   width:250px;
   min-width: 250px;
   height: 250px;
@@ -363,141 +303,8 @@ hr {
   overflow: hidden;
   position: relative;
   flex: 1;
-}
-
-.cell1 {
-	width:100%;
-    height:100%;
-	background: url(../images/cell1_250px.png);
-	position: absolute;
-	top: 00px;
-    left: 0px;
-	transition: all 1s ease;
-  -moz-transition: all 1s ease;
-  -ms-transition: all 1s ease;
-  -webkit-transition: all 1s ease;
-  -o-transition: all 1s ease;
-}
-.cell2 {
-	width:100%;
-    height:100%;
-	background: url(../images/cell2_250px.png);
-	position: absolute;
-	top: 00px;
-    left: 0px;
-	transition: all 1s ease;
-  -moz-transition: all 1s ease;
-  -ms-transition: all 1s ease;
-  -webkit-transition: all 1s ease;
-  -o-transition: all 1s ease;
 } 
-.cell3 {
-	width:100%;
-    height:100%;
-	background: url(../images/cell3_250px.png);
-	position: absolute;
-	top: 00px;
-    left: 0px;
-	transition: all 1s ease;
-  -moz-transition: all 1s ease;
-  -ms-transition: all 1s ease;
-  -webkit-transition: all 1s ease;
-  -o-transition: all 1s ease;
-}
-.cell4 {
-	width:100%;
-    height:100%;
-	background: url(../images/cell4_250px.png);
-	position: absolute;
-	top: 00px;
-    left: 0px;
-	transition: all 1s ease;
-  -moz-transition: all 1s ease;
-  -ms-transition: all 1s ease;
-  -webkit-transition: all 1s ease;
-  -o-transition: all 1s ease;
-}
 
-.cellA {
-	width:100%;
-    height:100%;
-	background: url(../images/cellA_250px.png);
-	position: absolute;
-	top: 00px;
-    left: 0px;
-	transition: all 1s ease;
-  -moz-transition: all 1s ease;
-  -ms-transition: all 1s ease;
-  -webkit-transition: all 1s ease;
-  -o-transition: all 1s ease;
-}
-
-.cellB {
-	width:100%;
-    height:100%;
-	background: url(../images/cellB_250px.png);
-	position: absolute;
-	top: 00px;
-    left: 0px;
-	transition: all 1s ease;
-  -moz-transition: all 1s ease;
-  -ms-transition: all 1s ease;
-  -webkit-transition: all 1s ease;
-  -o-transition: all 1s ease;
-}
-
-.cellC {
-	width:100%;
-    height:100%;
-	background: url(../images/cellC_250px.png);
-	position: absolute;
-	top: 00px;
-    left: 0px;
-	transition: all 1s ease;
-  -moz-transition: all 1s ease;
-  -ms-transition: all 1s ease;
-  -webkit-transition: all 1s ease;
-  -o-transition: all 1s ease;
-}
-
-.cellD {
-	width:100%;
-    height:100%;
-	background: url(../images/cellD_250px.png);
-	position: absolute;
-	top: 00px;
-    left: 0px;
-	transition: all 1s ease;
-  -moz-transition: all 1s ease;
-  -ms-transition: all 1s ease;
-  -webkit-transition: all 1s ease;
-  -o-transition: all 1s ease;
-}
-
-.cell1:hover, .cell2:hover, .cell3:hover, .cell4:hover,
-.cellA:hover, .cellB:hover, .cellC:hover, .cellD:hover {
-  width:300px;
-  height: 300px;
-  transform: scale(1.5);
-  -moz-transform: scale(1.5);
-  -webkit-transform: scale(1.5);
-  -o-transform: scale(1.5);
-  -ms-transform: scale(1.5); /* IE 9 */
-  transition: 8s all ease;
-}  
-
-.cellImage:hover {
-  transform: scale(1.5);
-  -moz-transform: scale(1.5);
-  -webkit-transform: scale(1.5);
-  -o-transform: scale(1.5);
-  -ms-transform: scale(1.5); /* IE 9 */
-  -ms-filter: 
-  transition: 1s ;
-}
-
-
-/*CSS for image hover transition*/
 .thumbnail {
     position: relative;
 }
@@ -525,7 +332,7 @@ hr {
 }
 
 .thumbnail:hover .image {
-  opacity: 0.7;
+  opacity: 0.85;
 }
 
 .thumbnail:hover .middle {
@@ -534,28 +341,23 @@ hr {
 
 .caption {
   color: #FFF;
-  font-size: 12px;
+  font-size: 13px;
 }
-/*end CSS for image hover transition*/
-
-
+/*End CELL Images - CSS for hover*/
 
 
 /*Spacing items 50% in Content Block*/
-.pic_half, {
+.pic_half {
 	flex: 1;
 	display: block;
 }
 
-.pic_half, {
-	flex: 1;
-}
-
-.contentBlockWhite img {
-	flex: 1;
+/*removes descender line on conact cell image
+*/.contentBlockWhite img {
 	display: block;
 }
 
+/*Contact page text*/
 .text_half,
 .text_half h2 {
 	flex: 1;
@@ -838,20 +640,46 @@ footer p a:hover {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*MOBILE*/
+@media screen and (max-width: 800px) {
 
+/*mobile nav*/
+nav {
+	display: none;
+ }
+.mobileNav {
+	display:block;
+	width: 100%;
+}
+.hamburger {
+  display: inline-block;
+}
+.col-ham {
+	display: block;
+}
+/*end mobile nav*/
 
-@media screen and (max-width: 1100px) {
 .cellImage {
 	display: block;
 	margin: 0 auto;
 	float: right
 }
 
-
  .contentBlock,
- .contentBlockWhite,
- .contentBlockClear {
+ .contentBlockWhite {
  	display: block;
     width: 90%;
  }
@@ -897,32 +725,25 @@ footer .row {
 }
 }
 
+
+
+
+
+
+
 @media screen and (max-width: 600px) {
 
-
-/*mobile nav*/
-nav {
-	display: none;
- }
-
-.mobileNav {
-	display:block;
-	width: 100%;
-}
-
-.hamburger {
-  display: inline-block;
-}
-
-.col-ham {
-	display: block;
-}
-/*end mobile nav*/
-
-table tr td.first, 
+ 
 table tr td.other {
 	display:block;
 	width: 100%;
+}
+
+table tr td.first {
+	display:block;
+	width: 100%;
+	font-size: 17px;
+	text-align: center;
 }
 
 /*hide on mobile*/
