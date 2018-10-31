@@ -1,7 +1,7 @@
 html body * {
   box-sizing: border-box;
   font-family: 'Roboto', Arial, sans-serif;
-  border: 1px dashed #333;
+  /*border: 1px dashed #333;*/
 }
 
 html, html body  {
@@ -747,8 +747,9 @@ table tr td.other {
 	padding:10px 30px;
 }
 
-
-
+table tr td span {
+	display: none;
+}
 
 /*FAQ table styles*/
 
@@ -918,12 +919,26 @@ nav {
 }
 /*end mobile nav*/
 
-
 table tr td.first, 
 table tr td.other {
 	display:block;
 	width: 100%;
 }
+
+/*hide on mobile*/
+table tr td.hide {
+	display: none;
+}
+/*end hide on mobile*/
+
+
+/*reveal product name on mobile FAQ chart*/
+table tr td span {
+	display: inline-block;
+	font-size: 13px;
+}
+/*end reveal product name on mobile FAQ chart*/
+
   
 .text_half,
 .inputBoxWidthName,
